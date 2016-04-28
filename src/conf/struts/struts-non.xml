@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	<!--主要为游客查询开放权限-->
+	<package name="non" namespace="/" extends="non-authority">
+        <action name="rand" class="verifyCodeAction"> 
+			<result type="stream"> 
+				<param name="contentType">image/jpeg</param> 
+				<param name="inputName">inputStream</param> 
+			</result> 
+		</action>
+		<action name="findUsersByTelephone" class="usersAction" method="findUsersByTelephone">
+			<result type="json" >
+				<param name="root">success</param>
+			</result>
+		</action>
+		<action name="verifyCode" class="usersAction" method="verifyCode">
+			<result type="json" >
+				<param name="root">success</param>
+			</result>
+		</action>
+		<action name="smsCode" class="usersAction" method="smsCode">
+			<result type="json" >
+				<param name="root">success</param>
+			</result>
+		</action>
+		<action name="sendSms" class="smsAction" method="sendSms">
+			<result type="json" >
+				<param name="root">success</param>
+			</result>
+		</action>
+		<action name="registerUser" class="usersAction" method="registerUser">
+			<result name="success" >/pages/paymoney.jsp</result>
+			<result name="input" >/pages/register.jsp</result>
+			<result name="error" >/pages/register.jsp</result>
+		</action>
+		<action name="paymoney" class="usersAction" method="paymoney">
+			<result name="success" >/pages/selectpay.jsp</result>
+			<result name="failed" >/pages/failed.jsp</result>
+		</action>
+		<action name="payresult" class="usersAction" method="payresult">
+			<result name="success" >/pages/ok.jsp</result>
+			<result name="failed" >/pages/failed.jsp</result>
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	<package name="right" namespace="/" extends="authority"><!--authority-->
+		<action name="Users_*" class="usersAction" method="{1}">
+			<result type="json" />
+		</action>
+		<action name="updateSelfUsers" class="usersAction" method="updateSelfUsers">
+			<result name="success">/right/updateSuccess.jsp</result>
+			<result name="input">/right/updateFailed.jsp</result>
+		</action>
+		<action name="Role_*" class="roleAction" method="{1}">
+			<result type="json" />
+		</action>
+		<action name="Roleusers_*" class="roleUsersAction" method="{1}">
+			<result type="json" />
+		</action>
+		<action name="Menu_*" class="menuAction" method="{1}">
+			<result type="json" />
+		</action>
+		<action name="Rolemenu_*" class="roleMenuAction" method="{1}">
+			<result type="json" />
+		</action>
+		<action name="Menu_showMenuByUser" class="menuAction" method="showMenuByUser">
+			<result name="treeJson">/right/treeJson.jsp</result>
+		</action>
+	</package>
+</struts>

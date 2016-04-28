@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	<package name="profitreport" namespace="/" extends="authority">
+		<action name="ProfitReport_*" class="profitReportAction" method="{1}">
+			<result type="json" />
+		</action>
+		<action name="Userdto_*" class="deviceProfitAction" method="{1}">
+			<result type="json" />
+		</action>
+		<action name="MonthDTO_*" class="monthsettlementAction" method="{1}">
+			<result type="json" />
+		</action>
+	</package>
+</struts>

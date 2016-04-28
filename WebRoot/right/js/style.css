@@ -1,0 +1,151 @@
+/*基本清零*/
+a, abbr, acronym, address, applet, article, aside, audio,b, blockquote, big, body,center, canvas, caption, cite, code, command,datalist, dd, del, details, dfn, dl, div, dt, em, embed,fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html,i, iframe, img, ins,kbd, keygen,label, legend, li, meter,nav,object, ol, output,p, pre, progress,q, s, samp, section, small, span, source, strike, strong, sub, sup,table, tbody, tfoot, thead, th, tr, tdvideo, tt,u, ul, var{
+    margin: 0;
+	padding: 0;
+	font-style:normal; }
+.clr:after{content:'';display:block;height:0;clear:both;}
+.clr{*zoom:1;}
+ul,li{
+	list-style:none;}
+img{ border:none;}
+input,button,select,textarea{outline:none}
+textarea{resize:none}
+a{
+	text-decoration:none;}
+a:hover{
+	text-decoration:none;
+-webkit-transition:  0.4s linear !important;
+-moz-transition:  0.4s linear !important;
+-o-transition:  0.4s linear !important;
+transition:  0.4s linear !important; }
+
+/* 设置HTML5元素为块 */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display:block;padding:0px; margin:0px; border:none;}
+
+/* 超出隐藏 */
+.overflow{ overflow:hidden;} 
+
+/* 点击去除阴影 */
+a,button,input,i{-webkit-tap-highlight-color:rgba(0,0,0,0); -moz-tap-highlight-color:rgba(0,0,0,0); -ms-tap-highlight-color:rgba(0,0,0,0);tap-highlight-color:rgba(0,0,0,0);}
+a{cursor:pointer;
+color:#333;
+}       
+		          
+/* 基础样式 */
+.fl{ float: left; }
+.fr{ float: right;}
+.db{ display:block;}
+.w12{width:1200px;
+margin:0 auto;}
+.w13{width:65%;
+margin:0 auto;}
+div{
+	background:none;}
+
+.main{
+	background:#FFF;
+	padding:0;
+	height:auto;}
+
+.inputsec{
+width: 840px;
+margin: 0 auto;
+background: #fff;
+padding: 50px 0 100px 100px;
+}
+.inputsec ul,.inputsec ul li{
+	display:block;
+	min-width:600px;}
+.inputsec ul li{
+	clear: both;
+zoom: 1;
+overflow: visible;
+	height:54px;
+	line-height:50px;
+	color:#333;}
+.inputsec ul li label{
+	display:block;
+	width:90px;
+	text-align:right;}
+.txt-m {
+margin:10px 12px 0 0;
+height: 28px;
+line-height: 28px;
+padding: 2px 3px;
+padding-left: 15px;
+border: 1px solid #dedede;
+color: #666;
+width: 292px;
+font-size: 14px;}
+.yzm{
+	margin:10px 12px 0 0;
+	height: 32px;
+	line-height: 32px;
+	border: 1px solid #dedede;
+	width: 310px;}
+.txt-y,.txt-j{
+line-height: 28px;
+height: 28px;
+padding-top: 2px;
+padding-left:15px;
+color: #666;
+width: 160px;
+border:none;
+font-size: 14px;}
+.chg{display:block;
+color:#007dcd;}
+a.chg:hover{
+	color:#249deb;}
+a.chg:active{
+	color:#333;}
+.mt2{
+	margin-top:2px;}
+.mr2{
+	margin-right:3px;}
+.msg-normal{
+	color:#777;}
+.msg-error{
+	color:#e82020;}
+.msg-info{
+	color:#e82020;}
+.yzm2{
+	background:#f5f5f5;
+	margin:10px 12px 0 0;
+	height: 32px;
+	line-height: 32px;
+	border: 1px solid #dedede;
+	width: 175px;}
+.txt-j{
+	background:#f5f5f5;}
+.send{
+width: 125px;
+height: 32px;
+line-height: 32px;
+text-align: center;
+margin: 10px 0 0 0;
+border: 1px #dedede solid;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;}
+a.send:hover{
+	border: 1px #007dcd solid;
+	color:#249deb;}
+a.send:active{
+	border: 1px #dedede solid;
+	color:#333;}
+.next{
+	margin-top:8px;
+	width:100px;
+	height:42px;
+	line-height:42px;
+	text-align:center;
+	color:#fff;
+	font-size:16px;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+	background:#1ca521;}
+a.next:hover{
+	background:#27c42d;}
+a.next:active{
+	background:#19861d;}

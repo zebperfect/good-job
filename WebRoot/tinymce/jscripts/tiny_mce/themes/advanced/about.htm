@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>{#advanced_dlg.about_title}</title>
+	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+	<script type="text/javascript" src="../../utils/mctabs.js"></script>
+	<script type="text/javascript" src="js/about.js"></script>
+</head>
+<body id="about" style="display: none">
+		<div class="tabs">
+			<ul>
+				<li id="general_tab" class="current"><span><a href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;">{#advanced_dlg.about_general}</a></span></li>
+				<li id="help_tab" style="display:none"><span><a href="javascript:mcTabs.displayTab('help_tab','help_panel');" onmousedown="return false;">{#advanced_dlg.about_help}</a></span></li>
+				<li id="plugins_tab"><span><a href="javascript:mcTabs.displayTab('plugins_tab','plugins_panel');" onmousedown="return false;">{#advanced_dlg.about_plugins}</a></span></li>
+			</ul>
+		</div>
+
+		<div class="panel_wrapper">
+			<div id="general_panel" class="panel current">
+				<h3>{#advanced_dlg.about_title}</h3>
+				<p>Version: <span id="version"></span> (<span id="date"></span>)</p>
+				<p style="text-indent: 2em;">TinyMCE 是一个面向Web平台的基于 Javascript 开发的即见即所得（WYSIWYG）的 HTML 编辑器。它可以将 Textarea 或其他 HTML 标记转换为编辑器界面，使用起来非常方便。</p>
+<p style="text-indent: 2em;">TinyMCE 由 Moxiecode Systems AB 开发，是基于 <a href="../../license.txt" target="_blank">LGPL</a> 的开源软件。</p>
+				<p style="text-indent: 2em;">Copyright &copy; 2003-2008, <a href="http://www.moxiecode.com" target="_blank">Moxiecode Systems AB</a>, All rights reserved.</p>
+				<p style="text-indent: 2em;">关于本软件的更多信息请查看 <a href="http://tinymce.moxiecode.com" target="_blank">TinyMCE website</a>.</p>
+				<div id="buttoncontainer">
+					<a href="http://www.moxiecode.com" target="_blank"><img src="http://tinymce.moxiecode.com/images/gotmoxie.png" alt="Got Moxie?" border="0" /></a>
+					<a href="http://sourceforge.net/projects/tinymce/" target="_blank"><img src="http://sourceforge.net/sflogo.php?group_id=103281" alt="Hosted By Sourceforge" border="0" /></a>
+					<a href="http://www.freshmeat.net/projects/tinymce" target="_blank"><img src="http://tinymce.moxiecode.com/images/fm.gif" alt="Also on freshmeat" border="0" /></a>
+				</div>
+				<p style="font-size:14px;">使用中遇到问题，请到<a href="http://bbs.htmlbird.net/" target="_blank"><span style="color:#00E;">网鸟IT技术论坛</span></a>发贴求助。</p>
+			</div>
+
+			<div id="plugins_panel" class="panel">
+				<div id="pluginscontainer">
+					<h3>{#advanced_dlg.about_loaded}</h3>
+
+					<div id="plugintablecontainer">
+					</div>
+
+					<p>&nbsp;</p>
+				</div>
+			</div>
+
+			<div id="help_panel" class="panel noscroll" style="overflow: visible;">
+				<div id="iframecontainer"></div>
+			</div>
+		</div>
+
+		<div class="mceActionPanel">
+			<div style="float: right">
+				<input type="button" id="cancel" name="cancel" value="{#close}" onclick="tinyMCEPopup.close();" />
+			</div>
+		</div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.content11 {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-family: Microsoft YaHei, Simsum, serif;
+}
+
+.ContentMiddle11 {
+	position: relative;
+	width: 900px;
+	height: auto;
+	margin: 0 auto;
+	background:;
+}
+
+.MiddleImg11 {
+	width: 281px;
+	height: 81px;
+	margin: 90px auto 0 auto;
+	position: relative;
+}
+
+.Search11 {
+	width: 514px;
+	height: 50px;
+	background:;
+	margin: 30px auto 0 auto;
+	position: relative;
+}
+
+.key11 {
+	border-right: none !important;
+	outline: none;
+	padding: 0 0 0 10px;
+	font-family: arial;
+	border: 1px solid #999;
+	font-size: 24px;
+	vertical-align: central;
+	width: 400px;
+	height: 40px;
+	color: #3C3C3C;
+}
+
+.tijiao11 {
+	background: url(../../images/32.png);
+	cursor: pointer;
+	font-family: Microsoft yahei;
+	border: none;
+	font-size: 20px;
+	color: #3c3c3c;
+	width: 100px;
+	height: 42px;
+}
+
+.chatu11 {
+	margin: 0 auto;
+	position: relative;
+	border: none;
+}
+
+.Table_111 {
+	margin: 0 auto;
+	width: 800px;
+	height: auto;
+}
+
+.rfid_search11 {
+	margin: 0 auto;
+}
+
+table td {
+	color: #5A5A5A;
+	text-align: center;
+	letter-spacing: normal;
+	height: 30px;
+	border: 1px solid #CCC;
+}
+
+.foot11 {
+	width: 100%;
+	height: auto;
+	position: relative;
+	background: #DEDEDE;
+	border-top: 1px solid #ADADAD;
+}
+
+.foot-middle11 {
+	width: 800px;
+	height: 100px;
+	margin: 0 auto 0px auto;
+	position: relative;
+}
+
+.banquan11 {
+	padding-top: 10px;
+	color: #999;
+	font-size: 12px;
+	line-height: 2.2em;
+}
+
+.foot-left11 {
+	position: relative;
+	width: 300px;
+	height: 99px;
+	float: left;
+}
+
+.foot-right11 {
+	position: relative;
+	width: 300px;
+	height: 99px;
+	float: right;
+}
+
+.foot-right11 img {
+	float: right;
+	margin-right: 20px;
+	margin-top: 10px;
+}
